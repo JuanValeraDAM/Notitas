@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notitas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body class="container d-flex flex-column gap-3 p-3">
+    <header class="row">
+        <div class="col-md-1 d-flex flex-column align-items-stretch justify-content-center gap-3">
+            <button class="btn btn-sm btn-primary" id="btn-nueva">Nueva</button>
+            <button class="btn btn-sm btn-success" id="btn-guardar">Guardar</button>
+        </div>
+        <div class="col-md-7">
+            <div id="nota-editable" class="p-0 card text-dark bg-warning">
+                <div id="header-nota" class="card-header">01/02/2023 17:30</div>
+                <div id="cuerpo-nota" class="card-body p-1 m-2" contenteditable></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <input class="form-control" type="text" id="input-tag" list="tags-disponibles"
+                placeholder="Añade etiqueta...">
+            <datalist id="tags-disponibles">
+                <option value="Cosa 1"></option>
+                <option value="Cosa 2"></option>
+                <option value="Otra cosa"></option>
+            </datalist>
+            <div id="tags-aplicadas" class="p-2 d-flex flex-wrap gap-3">
+                <span class="badge rounded-pill bg-danger">Cosa 1<button
+                        class="btn btn-sm btn-close btn-close-white"></button></span>
+                <span class="badge rounded-pill bg-danger">Otra cosa<button
+                        class="btn btn-sm btn-close btn-close-white"></button></span>
+            </div>
+        </div>
+    </header>
+    <main class="row flex-grow-1">
+        <div class="col-md-3">
+            <input id="input-busqueda" class="form-control" type="search" placeholder="Búsqueda...">
+            <div id="tags-busqueda" class="mt-3 p-2 d-flex flex-wrap gap-3 justify-content-center">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-sm btn-outline-info text-dark" for="btncheck1">Cosa 1</label>
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-sm btn-outline-info text-dark" for="btncheck2">Cosa 2</label>
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-sm btn-outline-info text-dark" for="btncheck1">Cosa 1</label>
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-sm btn-outline-info text-dark" for="btncheck2">Cosa 2</label>
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-sm btn-outline-info text-dark" for="btncheck1">Cosa 1</label>
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-sm btn-outline-info text-dark" for="btncheck2">Cosa 2</label>
+            </div>
+        </div>
+        <div id="lista-notas" class="col-md-9">
+            <div class="mx-3 mb-3 p-0 card text-dark bg-warning">
+                <div class="card-header"><button class="btn btn-close"></button><span>01/02/2023 17:30</span></div>
+                <div class="card-body p-1 m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad quas
+                    accusamus in illo ab neque commodi magni dignissimos? Earum?</div>
+            </div>
+            <div class="mx-3 mb-3 p-0 card text-dark bg-warning">
+                <div class="card-header">01/02/2023 17:30</div>
+                <div class="card-body p-1 m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eaque ipsa
+                    amet necessitatibus illo vero voluptas dolorum iure expedita, aliquid sapiente similique, cupiditate
+                    tempore! Ut facilis nobis eum quibusdam aliquam accusantium. Nulla totam provident ut perferendis
+                    consequatur, modi natus, distinctio libero incidunt maxime illo molestiae saepe eius in? Eaque,
+                    maiores!</div>
+            </div>
+            <div class="mx-3 mb-3 p-0 card text-dark bg-warning">
+                <div class="card-header">01/02/2023 17:30</div>
+                <div class="card-body p-1 m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad quas
+                    accusamus in illo ab neque commodi magni dignissimos? Earum?</div>
+            </div>
+            <div class="mx-3 mb-3 p-0 card text-dark bg-warning">
+                <div class="card-header">01/02/2023 17:30</div>
+                <div class="card-body p-1 m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad quas
+                    accusamus in illo ab neque commodi magni dignissimos? Earum?</div>
+            </div>
+            <div class="mx-3 mb-3 p-0 card text-dark bg-warning">
+                <div class="card-header">01/02/2023 17:30</div>
+                <div class="card-body p-1 m-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, fuga?
+                </div>
+            </div>
+            <div class="mx-3 mb-3 p-0 card text-dark bg-warning">
+                <div class="card-header">01/02/2023 17:30</div>
+                <div class="card-body p-1 m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad quas
+                    accusamus in illo ab neque commodi magni dignissimos? Earum?</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
